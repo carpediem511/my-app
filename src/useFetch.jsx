@@ -42,7 +42,7 @@ export const useFetch = (url) => {
 			let queryParams = ''
 
 			for (const key in params) {
-				queryParams += `${key} = ${params[key]}&`
+				queryParams += `${key}=${params[key]}&`
 			}
 
 			queryParams = queryParams.slice(0, -1)
